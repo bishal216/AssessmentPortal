@@ -1,0 +1,1 @@
+images, CSS, JS and all the static objects go here.

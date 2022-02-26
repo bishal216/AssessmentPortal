@@ -1,0 +1,19 @@
+{% extends 'PortalApp/main.html' %}
+
+{% block title %}
+    Home | Assesment Portal
+{% endblock %}
+
+{% block content %}
+    <div>
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+    </div>
+    <p> 
+        There is only supposed to be a single signin button here but 
+        until we manage authentication, multuple buttons are for convinience
+    </p>
+        <button>As ECD</button>
+        <button>As Department</button>
+        <button>As Teacher</button>
+{% endblock %}
