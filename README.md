@@ -6,10 +6,11 @@ How to setup:
 2. Activate vitual envirenment(source .../bin/activate)
 3. Install requirements( python -m pip install -r requirements.txt)
 4. startproject(inside venv)
-
+5. startapp
 How to run(inside venv): 
-1. startapp
+2. runmigrations
 2. migrate
-3. runserver
+3. loaddata
+4. runserver
 
 

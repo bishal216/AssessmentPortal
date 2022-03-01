@@ -9,5 +9,11 @@ def asECD(request):
 def asDepartment(request):
     dept = Department.objects.all()
     return render(request,'PortalApp/Department.html',{'dept':dept})
-def asTeacher(request):
-    return render(request,'PortalApp/Teacher.html')
+def asTeacher(request,pk):
+    teacher = Teacher.objects.get(id=pk)
+    t_name = teacher.name
+    asmntStatus = AssessmentStatus.objects.all()
+    StdList = StudentData.objects.all()
+
+    context={'status': asmntStatus, 'teacher':teacher,'t_name':t_name, 'StdList':StdList}
+    return render(request,'PortalApp/Teacher.html',context)
